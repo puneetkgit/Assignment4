@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  min-width: 400px;
+  background-image: url(../images/2414047.jpg);
+}
+
+main {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 3.75rem 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "item1 item2"
+    "item3 item4";
+}
+
+.header {
+  grid-area: header;
+
+  background-image: url(../images/Pattern-Backgrounds.jpg);
+  border-bottom: 3px solid black;
+  text-align: center;
+  padding: 1.5%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.item1 {
+  grid-template-areas: item1;
+}
+.item2 {
+  grid-template-areas: item2;
+}
+.item3 {
+  grid-template-areas: item3;
+}
+.item4 {
+  grid-template-areas: item4;
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
+}
+
+.item {
+  margin: 0px AUTO;
+  width: 300px;
+  padding: 15px;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buy {
+  display: flex;
+  border-top: 1px black solid;
+  font-size: 18px;
+}
+
+.now {
+  width: 50%;
+  text-align: center;
+  background: #388e3c;
+  padding: 2px;
+}
+.later {
+  width: 50%;
+  text-align: center;
+  background: yellow;
+  padding: 2px;
+}

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+    min-width: 400px;
+    background-image: url(../images/2414047.jpg);
+
+}
+
+main{
+    display:grid;
+    height:100%;
+    grid-template-rows: 3.75rem 1fr 1fr;
+    grid-template-areas: "header header"
+                "offer welcome"
+                "know-more know-more"; 
+}
+
+.header{
+    grid-area: header;
+
+    background-image: url(../images/Pattern-Backgrounds.jpg);
+    border-bottom: 3px solid black;
+    text-align: center;
+    padding: 1.5%;
+    font-size:2rem;
+    font-weight: bolder;
+}
+
+.welcome{
+    grid-area: welcome;
+    padding:15%;
+    font-size: 2.5rem;
+    justify-self: center;
+    align-self: center;
+    height:100%
+}
+
+.offer{
+    grid-area: offer;
+    padding:17% 0%;
+
+}
+
+.deal{
+    border: 2px  green solid;   
+    width:50%;
+    text-align: center;
+    margin: 0 auto;
+    background: yellow;
+    min-height:200px;
+    min-width: 185px;
+}
+
+.steal{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+a:link{
+    color:black;
+    text-decoration:none
+}
+
+
+
+a:visited{
+    color:black;
+    text-decoration:none
+
+}
+
+
+
+
+
+.img-container {
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+
+.know-more{
+    grid-area: know-more;
+    padding:0% 10%
+
+}
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width:480px) {
+
+    main{
+        display:grid;
+        grid-template-rows: 10% 1fr 1fr 1fr;
+        grid-template-areas: "header"
+                    "welcome"
+                    "offer"
+                    "know-more"; 
+    }
+
+
+    .welcome{
+        font-size:30px;
+        text-align: center;
+        padding:10%;
+    }
+
+    .offer{
+        padding:8%;
+    }
+
+    .know-more{
+        text-align: center;
+        padding: 8%;
+    }
+
+
+  }
